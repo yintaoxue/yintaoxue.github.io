@@ -1,0 +1,11 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: 若谷
+url: http://ruogu.org
+feed: /atom.xml
+author_info: <a href="http://ruogu.org/">ruogu</a>
