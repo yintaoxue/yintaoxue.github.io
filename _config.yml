@@ -1,11 +1,30 @@
-auto: true
+markdown: kramdown
+highlighter: pygments
+permalink: /posts/:title.html
+excerpt_separator: "<!-- more -->"
 
-markdown: rdiscount
-pygments: true
-paginate: 8
-permalink: /:title
-
-title: 若谷
+github: yintaoxue
+author: "若谷"
+email: 
+name: "若谷博客"
 url: http://ruogu.org
-feed: /atom.xml
-author_info: <a href="http://ruogu.org/">ruogu</a>
+domain: ruogu.org
+all_categories: [
+["basic", "编程基础","/posts/basic.html"],
+["arch", "系统架构","/posts/arch.html"],
+["data", "Data","/posts/data.html"],
+["ml", "ML","/posts/ml.html"],
+["read", "读书笔记","/posts/read.html"],
+["about", "关于","/about.html"]
+]
+
+paginate: 8
+paginate_path: "posts/page:num"
+timezone: America/Los_Angeles
+
+collections:
+  docs:
+    output: true
+
+gems:
+ - jekyll-paginate
