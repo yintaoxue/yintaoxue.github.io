@@ -14,7 +14,7 @@ all_categories: [
 ["arch", "系统架构","/posts/arch.html"],
 ["data", "Data","/posts/data.html"],
 ["ml", "ML","/posts/ml.html"],
-["read", "读书笔记","/posts/read.html"],
+["read", "读书","/posts/read.html"],
 ["about", "关于","/about.html"]
 ]
 
