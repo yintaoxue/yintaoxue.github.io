@@ -7,8 +7,6 @@ author: ruogu
 tags: [kafka, tutorial]
 ---
 
-# Kafka基础
-
 无论是否消费Kafka都会保留所有的消息，超过设定时间才会丢弃；存储大量数据对性能不会有太大影响；
 
 Topic是由分区的commit log组成，有序的不可变的消息队列，每个partition都有一个offset id，唯一定位一条消息；
