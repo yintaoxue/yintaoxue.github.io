@@ -5,7 +5,6 @@ date: 2014-09-14
 category: basic
 author: ruogu
 tags: [eclipse, tutorial]
-typora-root-url: ../../
 ---
 
 # 开发工具及使用技巧

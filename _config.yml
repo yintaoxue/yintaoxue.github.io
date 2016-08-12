@@ -2,7 +2,7 @@ name: 若谷
 url: https://ruogu.org
 description: bigdata,spark,solr,hadoop
 
-permalink: /:title/
+permalink: /:categories/:title/
 
 highlighter: null
 
@@ -10,7 +10,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   # https://github.com/jekyll/jekyll/pull/4090
-  # syntax_highlighter: rouge
+  syntax_highlighter: rouge
 
   # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
   # span, block element options fall back to global

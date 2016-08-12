@@ -4,7 +4,8 @@ title: 若谷
 ---
 
 <div id="content" class="content">
-    <h3>Quick Start</h3>
+
+    <h3>Basic</h3>
     <ul class="category basic-posts"> 
         {% for post in site.categories.basic reversed %}
         {% unless post.draft %}
@@ -14,7 +15,7 @@ title: 若谷
                 <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post-header">
                         <span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></span>
-                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}</time>
+                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}&nbsp;&nbsp;{{ post.date | date: "%B %e, %Y" }}</time>
                     </header>
                 </article>
             </div>
@@ -22,9 +23,9 @@ title: 若谷
         {% endunless %}
         {% endfor %}
     </ul>
-    <h3>How-Tos</h3>
-    <ul class="category howto-posts"> 
-        {% for post in site.categories.how-to reversed %}
+    <h3>Design</h3>
+    <ul class="category basic-posts"> 
+        {% for post in site.categories.design reversed %}
         {% unless post.draft %}
         {% assign title = post.title %}
         <li>
@@ -32,7 +33,7 @@ title: 若谷
                 <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post-header">
                         <span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></span>
-                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}</time>
+                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}&nbsp;&nbsp;{{ post.date | date: "%B %e, %Y" }}</time>
                     </header>
                 </article>
             </div>
@@ -40,9 +41,9 @@ title: 若谷
         {% endunless %}
         {% endfor %}
     </ul>
-    <h3>Reference</h3>
-    <ul class="category ref-posts"> 
-        {% for post in site.categories.reference reversed %}
+    <h3>Big Data</h3>
+    <ul class="category bigdata-posts"> 
+        {% for post in site.categories.bigdata reversed %}
         {% unless post.draft %}
         {% assign title = post.title %}
         <li>
@@ -50,7 +51,25 @@ title: 若谷
                 <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post-header">
                         <span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></span>
-                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}</time>
+                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}&nbsp;&nbsp;{{ post.date | date: "%B %e, %Y" }}</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+    <h3>Machine Learning</h3>
+    <ul class="category ml-posts"> 
+        {% for post in site.categories.ml reversed %}
+        {% unless post.draft %}
+        {% assign title = post.title %}
+        <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></span>
+                        <time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}&nbsp;&nbsp;{{ post.date | date: "%B %e, %Y" }}</time>
                     </header>
                 </article>
             </div>
@@ -64,8 +83,18 @@ title: 若谷
             <div class="article">
                 <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post-header">
-                        <span class="title"><a itemprop="name" href="mailto:hi@typroa.io">Email</a></span>
-                        <time class="date" itemprop="datePublished" >hi@typora.io</time>
+                        <span class="title"><a itemprop="name" href="https://github.com/yintaoxue">Github</a></span>
+                        <time class="date" itemprop="datePublished" >YintaoXue</time>
+                    </header>
+                </article>
+            </div>
+        </li>
+                <li>
+            <div class="article">
+                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <header class="post-header">
+                        <span class="title"><a itemprop="name" href="http://www.weibo.com/fossd">Weibo</a></span>
+                        <time class="date" itemprop="datePublished" >@开源行者</time>
                     </header>
                 </article>
             </div>
@@ -74,18 +103,8 @@ title: 若谷
             <div class="article">
                 <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="post-header">
-                        <span class="title"><a itemprop="name" href="https://github.com/typora/typora-issues/issues">Issues</a></span>
-                        <time class="date" itemprop="datePublished" >Typora Issues</time>
-                    </header>
-                </article>
-            </div>
-        </li>
-        <li>
-            <div class="article">
-                <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
-                    <header class="post-header">
-                        <span class="title"><a itemprop="name" href="https://twitter.com/typora">Twitter</a></span>
-                        <time class="date" itemprop="datePublished" >@typora</time>
+                        <span class="title"><a itemprop="name" href="https://twitter.com/yintaoxue">Twitter</a></span>
+                        <time class="date" itemprop="datePublished" >@yintaoxue</time>
                     </header>
                 </article>
             </div>

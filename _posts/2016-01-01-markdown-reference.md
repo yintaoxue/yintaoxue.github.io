@@ -2,10 +2,9 @@
 layout: post
 title: Markdown Reference
 date: 2016-01-01
-category: basic
+category: other
 author: typora.io
 tags: [markdown, tutorial]
-typora-root-url: ../../
 ---
 
 ## Overview

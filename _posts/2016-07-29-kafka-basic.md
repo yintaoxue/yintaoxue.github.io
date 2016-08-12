@@ -2,10 +2,9 @@
 layout: post
 title: Kafka基础
 date: 2016-07-29
-category: basic
+category: design
 author: ruogu
 tags: [kafka, tutorial]
-typora-root-url: ../../
 ---
 
 # Kafka基础
