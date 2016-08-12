@@ -7,7 +7,7 @@ author: ruogu
 tags: [kafka, tutorial]
 typora-root-url: ../../
 ---
-#Kafka基础
+# Kafka基础
 
 无论是否消费Kafka都会保留所有的消息，超过设定时间才会丢弃；存储大量数据对性能不会有太大影响；
 

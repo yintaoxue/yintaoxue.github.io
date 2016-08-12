@@ -8,19 +8,19 @@ tags: [eclipse, tutorial]
 typora-root-url: ../../
 ---
 
-#开发工具及使用技巧
+# 开发工具及使用技巧
 
 
 
 ### Eclipse
-#### 1. open explorer插件
+### 1. open explorer插件
 打开源代码所在文件夹
 
 下载地址：https://github.com/samsonw/OpenExplorer
 	
 直接放到你的eclipse程序目录下的plugins目录，重启eclipse即可。另一个工具easy explorer在eclipse4.4上不能使用了
 	
-#### 2. svn插件
+### 2. svn插件
 
 SVN插件：subclipse
 
@@ -48,7 +48,7 @@ Subclipse 1.8.x includes and requires Subversion 1.7.x client features and worki
 	
 Subclipse 1.10.x includes and requires Subversion 1.8.x client features and working copy format.
 
-#### 3. Eclpse设置背景
+### 3. Eclpse设置背景
 1. 打开Window->Preference->General->Editors->Text Editors
 2. 在右边的Text Editors面板中设置Appearance color options中的background color。
 
