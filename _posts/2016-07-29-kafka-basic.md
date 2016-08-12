@@ -7,6 +7,7 @@ author: ruogu
 tags: [kafka, tutorial]
 typora-root-url: ../../
 ---
+
 # Kafka基础
 
 无论是否消费Kafka都会保留所有的消息，超过设定时间才会丢弃；存储大量数据对性能不会有太大影响；
@@ -32,7 +33,7 @@ partition的作用：支持横向扩展，增加单个topic能够处理的数据
 kafka支持两种消息模型，同一个consumer group表示是一组consumer，一条消息只会被同一个group中的一个consumer消费。consumer实例可以是不同的进程或不同机器上的应用。
 同一个consumer group相当于队列模式，不同的group间相当于是发布订阅模式
 
-![](assets/20160729-kafka-cluster-group.png)
+![](../assets/img/20160729-kafka-cluster-group.png)
 
 一个partition只会被一个consumer消费，consumer的数量小于等于partion的数量。
 kafka只能保证同一个partition内的消息是有序的，可以通过consumer和partition的数量相同来保证同一个consumer读取一个partition的消息是有序处理的
